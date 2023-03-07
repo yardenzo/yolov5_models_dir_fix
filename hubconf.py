@@ -30,9 +30,9 @@ def _create(name, pretrained=True, channels=3, classes=80, autoshape=True, verbo
     """
     from pathlib import Path
 
-    from models.common import AutoShape, DetectMultiBackend
-    from models.experimental import attempt_load
-    from models.yolo import ClassificationModel, DetectionModel, SegmentationModel
+    from yolo_models.common import AutoShape, DetectMultiBackend
+    from yolo_models.experimental import attempt_load
+    from yolo_models.yolo import ClassificationModel, DetectionModel, SegmentationModel
     from utils.downloads import attempt_download
     from utils.general import LOGGER, check_requirements, intersect_dicts, logging
     from utils.torch_utils import select_device
